@@ -98,9 +98,9 @@ class FileUtils {
     } else if ("content".equalsIgnoreCase(uri.getScheme())) {
 
       // Return the remote address
-      if (isGooglePhotosUri(uri)) {
-        return null;
-      }
+      // if (isGooglePhotosUri(uri)) {
+      //   return null;
+      // }
 
       return getDataColumn(context, uri, null, null);
     } else if ("file".equalsIgnoreCase(uri.getScheme())) {
